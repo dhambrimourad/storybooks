@@ -38,4 +38,4 @@ jobs:
         make push
     - name: Deploy
       run: |-
-        make deploy
+        ENV=staging make deploy
