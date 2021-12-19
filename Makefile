@@ -38,8 +38,8 @@ terraform-action: check-env
 SSH_STRING=mourad_dhambri@storybooks-vm-$(ENV)
 OAUTH_CLIENT_ID=98786669149-14p4b6r69e23ojpea637kfivmd3jg4e0.apps.googleusercontent.com
 
-VERSION?=latest
-LOCAL_TAG=storybooks-app:$(VERSION)
+GITHUB_SHA?=latest
+LOCAL_TAG=storybooks-app:$(GITHUB_SHA)
 REMOTE_TAG=gcr.io/$(PROJECT_ID)/$(LOCAL_TAG)
 CONTAINER_NAME=storybooks-api
 DB_NAME=storybooks
